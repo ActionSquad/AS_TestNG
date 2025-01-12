@@ -1,0 +1,1256 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>67/13/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Jan 11 21:34:44 CST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>518 seconds (518333 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.Tree_TestCase.EmptyTryeditorBST()'><b>EmptyTryeditorBST</b><br>Test class: testCases.Tree_TestCase</td>
+<td><div><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorBST(Tree_TestCase.java:1004)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1370231468", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1370231468'><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorBST(Tree_TestCase.java:1004)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.EmptyTryeditorTypesofTrees()'><b>EmptyTryeditorTypesofTrees</b><br>Test class: testCases.Tree_TestCase</td>
+<td><div><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorTypesofTrees(Tree_TestCase.java:289)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace47968986", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace47968986'><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorTypesofTrees(Tree_TestCase.java:289)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.EmptyTryeditorBT()'><b>EmptyTryeditorBT</b><br>Test class: testCases.Tree_TestCase</td>
+<td><div><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorBT(Tree_TestCase.java:529)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace423629474", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace423629474'><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorBT(Tree_TestCase.java:529)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.EmptyTryeditorTreeTraversals()'><b>EmptyTryeditorTreeTraversals</b><br>Test class: testCases.Tree_TestCase</td>
+<td><div><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorTreeTraversals(Tree_TestCase.java:371)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace70435057", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace70435057'><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorTreeTraversals(Tree_TestCase.java:371)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.EmptyTryeditorTerminologies()'><b>EmptyTryeditorTerminologies</b><br>Test class: testCases.Tree_TestCase</td>
+<td><div><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorTerminologies(Tree_TestCase.java:210)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace523839133", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace523839133'><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorTerminologies(Tree_TestCase.java:210)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.EmptyTryeditorABT()'><b>EmptyTryeditorABT</b><br>Test class: testCases.Tree_TestCase</td>
+<td><div><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorABT(Tree_TestCase.java:922)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1381386227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1381386227'><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorABT(Tree_TestCase.java:922)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>7</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.EmptyTryeditorOverview()'><b>EmptyTryeditorOverview</b><br>Test class: testCases.Tree_TestCase</td>
+<td><div><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorOverview(Tree_TestCase.java:127)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1186361374", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1186361374'><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorOverview(Tree_TestCase.java:127)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.EmptyTryeditorBinTreeTrav()'><b>EmptyTryeditorBinTreeTrav</b><br>Test class: testCases.Tree_TestCase</td>
+<td><div><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorBinTreeTrav(Tree_TestCase.java:766)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1687902353", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1687902353'><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorBinTreeTrav(Tree_TestCase.java:766)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.EmptyTryeditorTravelsIllus()'><b>EmptyTryeditorTravelsIllus</b><br>Test class: testCases.Tree_TestCase</td>
+<td><div><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorTravelsIllus(Tree_TestCase.java:451)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1949551129", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1949551129'><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorTravelsIllus(Tree_TestCase.java:451)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>4</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.EmptyTryeditorIBT()'><b>EmptyTryeditorIBT</b><br>Test class: testCases.Tree_TestCase</td>
+<td><div><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorIBT(Tree_TestCase.java:844)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace120635040", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace120635040'><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorIBT(Tree_TestCase.java:844)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.EmptyTryeditorTypesofBT()'><b>EmptyTryeditorTypesofBT</b><br>Test class: testCases.Tree_TestCase</td>
+<td><div><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorTypesofBT(Tree_TestCase.java:607)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace267523139", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace267523139'><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorTypesofBT(Tree_TestCase.java:607)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>4</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.EmptyTryeditorIBST()'><b>EmptyTryeditorIBST</b><br>Test class: testCases.Tree_TestCase</td>
+<td><div><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorIBST(Tree_TestCase.java:1085)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1112474296", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1112474296'><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorIBST(Tree_TestCase.java:1085)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.EmptyTryeditorImpinBT()'><b>EmptyTryeditorImpinBT</b><br>Test class: testCases.Tree_TestCase</td>
+<td><div><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorImpinBT(Tree_TestCase.java:687)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace962058379", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace962058379'><pre>java.lang.AssertionError: Alert is not present
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.Tree_TestCase.EmptyTryeditorImpinBT(Tree_TestCase.java:687)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.Tree_TestCase.TypesofBT()'><b>TypesofBT</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>0</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityTYpesofTrees()'><b>InvalidTryHereFunctionalityTYpesofTrees</b><br>Test class: testCases.Tree_TestCase<br>Parameters: edgr7&rk, NameError: name 'edgr7' is not defined on line 1, name</td>
+<td></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.ValidTryHereFunctionalityTypesofBT()'><b>ValidTryHereFunctionalityTypesofBT</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityTypesofBT()'><b>InvalidTryHereFunctionalityTypesofBT</b><br>Test class: testCases.Tree_TestCase<br>Parameters: edgr7&rk, NameError: name 'edgr7' is not defined on line 1, name</td>
+<td></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityOverview()'><b>InvalidTryHereFunctionalityOverview</b><br>Test class: testCases.Tree_TestCase<br>Parameters: print("Hello, SyntaxError: bad input on line 1, syntax</td>
+<td></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityABT()'><b>InvalidTryHereFunctionalityABT</b><br>Test class: testCases.Tree_TestCase<br>Parameters: edgr7&rk, NameError: name 'edgr7' is not defined on line 1, name</td>
+<td></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.ValidTryHereFunctionalityTerm()'><b>ValidTryHereFunctionalityTerm</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.ImpinBT()'><b>ImpinBT</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>0</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.ValidTryHereFunctionalityBT()'><b>ValidTryHereFunctionalityBT</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>3</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.NavtoTryherepg()'><b>NavtoTryherepg</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>4</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.NavtoTryherepgIBT()'><b>NavtoTryherepgIBT</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.ValidTryHereFunctionalityABT()'><b>ValidTryHereFunctionalityABT</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>3</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityIBT()'><b>InvalidTryHereFunctionalityIBT</b><br>Test class: testCases.Tree_TestCase<br>Parameters: edgr7&rk, NameError: name 'edgr7' is not defined on line 1, name</td>
+<td></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.Terminologies()'><b>Terminologies</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>0</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityIBST()'><b>InvalidTryHereFunctionalityIBST</b><br>Test class: testCases.Tree_TestCase<br>Parameters: edgr7&rk, NameError: name 'edgr7' is not defined on line 1, name</td>
+<td></td>
+<td>8</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityImpinBT()'><b>InvalidTryHereFunctionalityImpinBT</b><br>Test class: testCases.Tree_TestCase<br>Parameters: edgr7&rk, NameError: name 'edgr7' is not defined on line 1, name</td>
+<td></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.Practice()'><b>Practice</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityTraversalsIllus()'><b>InvalidTryHereFunctionalityTraversalsIllus</b><br>Test class: testCases.Tree_TestCase<br>Parameters: print("Hello, SyntaxError: bad input on line 1, syntax</td>
+<td></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.NavtoTryherepgBinTreeTrav()'><b>NavtoTryherepgBinTreeTrav</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.ValidTryHereFunctionalityOverview()'><b>ValidTryHereFunctionalityOverview</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>3</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.NavtoTryherepgABT()'><b>NavtoTryherepgABT</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.BinTreeTrav()'><b>BinTreeTrav</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>0</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityABT()'><b>InvalidTryHereFunctionalityABT</b><br>Test class: testCases.Tree_TestCase<br>Parameters: print("Hello, SyntaxError: bad input on line 1, syntax</td>
+<td></td>
+<td>3</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.ValidTryHereFunctionalityTraversalsIllus()'><b>ValidTryHereFunctionalityTraversalsIllus</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>4</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.IBT()'><b>IBT</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.NavtoTryherepgTreeTraversals()'><b>NavtoTryherepgTreeTraversals</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>3</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityOverview()'><b>InvalidTryHereFunctionalityOverview</b><br>Test class: testCases.Tree_TestCase<br>Parameters: edgr7&rk, NameError: name 'edgr7' is not defined on line 1, name</td>
+<td></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.BST()'><b>BST</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.ValidTryHereFunctionalityBST()'><b>ValidTryHereFunctionalityBST</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.NavtoTryherepgIBST()'><b>NavtoTryherepgIBST</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.ValidTryHereFunctionalityIBT()'><b>ValidTryHereFunctionalityIBT</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>3</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.ValidTryHereFunctionalityImpinBT()'><b>ValidTryHereFunctionalityImpinBT</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityIBST()'><b>InvalidTryHereFunctionalityIBST</b><br>Test class: testCases.Tree_TestCase<br>Parameters: print("Hello, SyntaxError: bad input on line 1, syntax</td>
+<td></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityTerm()'><b>InvalidTryHereFunctionalityTerm</b><br>Test class: testCases.Tree_TestCase<br>Parameters: print("Hello, SyntaxError: bad input on line 1, syntax</td>
+<td></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityTreeTraversals()'><b>InvalidTryHereFunctionalityTreeTraversals</b><br>Test class: testCases.Tree_TestCase<br>Parameters: print("Hello, SyntaxError: bad input on line 1, syntax</td>
+<td></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityTreeTraversals()'><b>InvalidTryHereFunctionalityTreeTraversals</b><br>Test class: testCases.Tree_TestCase<br>Parameters: edgr7&rk, NameError: name 'edgr7' is not defined on line 1, name</td>
+<td></td>
+<td>4</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.ValidTryHereFunctionalityBinTreeTrav()'><b>ValidTryHereFunctionalityBinTreeTrav</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>4</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.NavtoTryherepgTermimology()'><b>NavtoTryherepgTermimology</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.NavtoTryherepgTravelsIllus()'><b>NavtoTryherepgTravelsIllus</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityBT()'><b>InvalidTryHereFunctionalityBT</b><br>Test class: testCases.Tree_TestCase<br>Parameters: print("Hello, SyntaxError: bad input on line 1, syntax</td>
+<td></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityTraversalsIllus()'><b>InvalidTryHereFunctionalityTraversalsIllus</b><br>Test class: testCases.Tree_TestCase<br>Parameters: edgr7&rk, NameError: name 'edgr7' is not defined on line 1, name</td>
+<td></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.LogOut()'><b>LogOut</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>0</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.ValidTryHereFunctionalityIBST()'><b>ValidTryHereFunctionalityIBST</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>3</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.TypesofTrees()'><b>TypesofTrees</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityImpinBT()'><b>InvalidTryHereFunctionalityImpinBT</b><br>Test class: testCases.Tree_TestCase<br>Parameters: print("Hello, SyntaxError: bad input on line 1, syntax</td>
+<td></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityBinTreeTrav()'><b>InvalidTryHereFunctionalityBinTreeTrav</b><br>Test class: testCases.Tree_TestCase<br>Parameters: edgr7&rk, NameError: name 'edgr7' is not defined on line 1, name</td>
+<td></td>
+<td>3</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityBT()'><b>InvalidTryHereFunctionalityBT</b><br>Test class: testCases.Tree_TestCase<br>Parameters: edgr7&rk, NameError: name 'edgr7' is not defined on line 1, name</td>
+<td></td>
+<td>4</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.ValidTryHereFunctionalityTreeTraversals()'><b>ValidTryHereFunctionalityTreeTraversals</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.NavtoOverviewofTrees()'><b>NavtoOverviewofTrees</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.NavtoTryherepgTypesofBT()'><b>NavtoTryherepgTypesofBT</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.ABT()'><b>ABT</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>0</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityTYpesofTrees()'><b>InvalidTryHereFunctionalityTYpesofTrees</b><br>Test class: testCases.Tree_TestCase<br>Parameters: print("Hello, SyntaxError: bad input on line 1, syntax</td>
+<td></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.IBST()'><b>IBST</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>0</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityBST()'><b>InvalidTryHereFunctionalityBST</b><br>Test class: testCases.Tree_TestCase<br>Parameters: print("Hello, SyntaxError: bad input on line 1, syntax</td>
+<td></td>
+<td>3</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityTerm()'><b>InvalidTryHereFunctionalityTerm</b><br>Test class: testCases.Tree_TestCase<br>Parameters: edgr7&rk, NameError: name 'edgr7' is not defined on line 1, name</td>
+<td></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.NavtoTryherepgBT()'><b>NavtoTryherepgBT</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>3</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.TravelsIllus()'><b>TravelsIllus</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>0</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityTypesofBT()'><b>InvalidTryHereFunctionalityTypesofBT</b><br>Test class: testCases.Tree_TestCase<br>Parameters: print("Hello, SyntaxError: bad input on line 1, syntax</td>
+<td></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.NavtoTryherepgBST()'><b>NavtoTryherepgBST</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>3</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityBST()'><b>InvalidTryHereFunctionalityBST</b><br>Test class: testCases.Tree_TestCase<br>Parameters: edgr7&rk, NameError: name 'edgr7' is not defined on line 1, name</td>
+<td></td>
+<td>3</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.ValidTryHereFunctionalityTypesoftrees()'><b>ValidTryHereFunctionalityTypesoftrees</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityBinTreeTrav()'><b>InvalidTryHereFunctionalityBinTreeTrav</b><br>Test class: testCases.Tree_TestCase<br>Parameters: print("Hello, SyntaxError: bad input on line 1, syntax</td>
+<td></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.NavtoTryherepgTypesofTrees()'><b>NavtoTryherepgTypesofTrees</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.TreeTraversals()'><b>TreeTraversals</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>0</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.InvalidTryHereFunctionalityIBT()'><b>InvalidTryHereFunctionalityIBT</b><br>Test class: testCases.Tree_TestCase<br>Parameters: print("Hello, SyntaxError: bad input on line 1, syntax</td>
+<td></td>
+<td>1</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.NavtoTryherepgImpinBT()'><b>NavtoTryherepgImpinBT</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+<tr>
+<td title='testCases.Tree_TestCase.BibaryTree()'><b>BibaryTree</b><br>Test class: testCases.Tree_TestCase</td>
+<td></td>
+<td>2</td>
+<td>testCases.Tree_TestCase@1df8b5b8</td></tr>
+</table><p>
+</body>
+</html>

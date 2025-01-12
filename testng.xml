@@ -1,0 +1,32 @@
+<suite name="Suite" parallel="classes" thread-count="7">
+<listeners>
+<listener class-name="listenerDsalgo.RetryListener"/>
+<listener class-name="listenerDsalgo.ScreenshotListener"/>
+<listener class-name="listenerDsalgo.ExtentManager"/>
+</listeners>
+
+<test name="TestEdge">
+<parameter name="browser" value="edge"/>
+<classes>
+<class name="testCases.Register_TestCase"/>
+<class name="testCases.Login_TestCase"/>
+<class name="testCases.Home_TestCase"/>
+<class name="testCases.HomeGetstd_TestCase"/>
+<class name="testCases.LinkedList_TestCase"/>
+<class name="testCases.Queue_TestCase"/>
+<class name="testCases.Tree_TestCase"/>
+</classes>
+</test>
+<test name="TestChrome">
+<parameter name="browser" value="chrome"/>
+<classes>
+<class name="testCases.Register_TestCase"/>
+<class name="testCases.Login_TestCase"/>
+<class name="testCases.Home_TestCase"/>
+<class name="testCases.HomeGetstd_TestCase"/>
+<class name="testCases.LinkedList_TestCase"/>
+<class name="testCases.Queue_TestCase"/>
+<class name="testCases.Tree_TestCase"/>
+</classes>
+</test>
+</suite>
