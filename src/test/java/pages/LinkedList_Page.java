@@ -41,7 +41,7 @@ public class LinkedList_Page {
 	
 	public LinkedList_Page(WebDriver driver) {
         this.driver = driver;
-        this.wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+        this.wait=new WebDriverWait(driver,Duration.ofSeconds(5));
         PageFactory.initElements(driver, this);
     }
 	
@@ -151,5 +151,10 @@ public class LinkedList_Page {
 	     		System.out.println("Alert is not present");
 	     	}
 	 		return null;
+	     }
+	     
+	     public Alert AssertAlert() {
+	         Alert alert = driver.switchTo().alert();
+	 		return alert;
 	     }
 }

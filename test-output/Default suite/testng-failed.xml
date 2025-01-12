@@ -3,28 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.Tree_TestCase">
+      <class name="testCases.Login_TestCase">
         <methods>
-          <include name="EmptyTryeditorBT"/>
-          <include name="closeup"/>
-          <include name="EmptyTryeditorABT"/>
+          <include name="ValidLogin"/>
           <include name="driverSetup"/>
-          <include name="EmptyTryeditorTypesofTrees"/>
-          <include name="setup"/>
           <include name="setupExcel"/>
-          <include name="EmptyTryeditorImpinBT"/>
-          <include name="EmptyTryeditorTypesofBT"/>
-          <include name="EmptyTryeditorTerminologies"/>
-          <include name="EmptyTryeditorTreeTraversals"/>
-          <include name="EmptyTryeditorBST"/>
-          <include name="EmptyTryeditorIBST"/>
-          <include name="EmptyTryeditorTravelsIllus"/>
-          <include name="EmptyTryeditorOverview"/>
-          <include name="EmptyTryeditorIBT"/>
-          <include name="EmptyTryeditorBinTreeTrav"/>
+          <include name="closeup"/>
+          <include name="SignOut"/>
           <include name="tearDown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- testCases.Tree_TestCase -->
+      </class> <!-- testCases.Login_TestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
