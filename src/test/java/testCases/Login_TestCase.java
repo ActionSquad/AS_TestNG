@@ -1,6 +1,5 @@
 package testCases;
 
-
 import java.io.IOException;
 
 import org.testng.Assert;
@@ -49,14 +48,14 @@ public class Login_TestCase extends BaseTest {
 	    		     Assert.assertEquals(actualAlert, ExpectedAlert);
 	        	 }
 	        }
-	  @Test
+	  @Test 
 	  public void ValidLogin() {
 		  login_page.SignInwithCred();
 		  String actualAlert = login_page.ValidandInvalidcredAlert();
 		  String expectedAlert = Login.get(2).get("alert"); 
 		  Assert.assertEquals(expectedAlert, actualAlert); 
 	  }
-	  @Test
+	  @Test 
 	  public void ToRegPage() {
 		  login_page.RegisterButton();
 		  String actualAlert = login_page.PageTitle();
@@ -64,7 +63,7 @@ public class Login_TestCase extends BaseTest {
 		  Assert.assertEquals(expectedAlert, actualAlert);
 		  
 	  }
-	  @Test
+	  @Test 
 	  public void SignOut() {
 		  login_page.SignInwithCred();
 		  login_page.LogoutButton();

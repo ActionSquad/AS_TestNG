@@ -2,6 +2,8 @@ package testCases;
 
 import java.io.IOException;
 
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.NoAlertPresentException;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -142,7 +144,25 @@ public class LinkedList_TestCase extends BaseTest {
 		linkedlist_page.BrowserBack();
 		
 		}	
-
+	  
+	  @Test
+	    public void LLIntroEmptyTryHereFunc() {
+			linkedlist_page.LLIntroLink();	
+			linkedlist_page.TryHereButton();
+			linkedlist_page.RunBtn();
+			try {
+			    Alert alert = 	linkedlist_page.AssertAlert();
+			    String actualAlert =alert.getText();
+			    Assert.assertNotNull(actualAlert);
+			    	}catch(NoAlertPresentException e){
+			    		
+			    		Assert.fail("Alert is not present");
+			    	}finally {
+			    		linkedlist_page.BrowserBack();
+					}
+		    }
+	    
+	 
 	@Test
 	public void CreateLL2TryEditor() {
 		linkedlist_page.LLCreateLLlink();	
@@ -187,6 +207,23 @@ public class LinkedList_TestCase extends BaseTest {
 		linkedlist_page.BrowserBack();
 		
 		}	
+	   
+	   @Test
+	    public void CreateLLEmptyTryHereFunc() {
+		   linkedlist_page.LLCreateLLlink();	
+			linkedlist_page.TryHereButton();
+			linkedlist_page.RunBtn();
+			try {
+			    Alert alert = 	linkedlist_page.AssertAlert();
+			    String actualAlert =alert.getText();
+			    Assert.assertNotNull(actualAlert);
+			    	}catch(NoAlertPresentException e){
+			    		
+			    		Assert.fail("Alert is not present");
+			    	}finally {
+			    		linkedlist_page.BrowserBack();
+					}
+		    }
 
 	@Test
 	public void TypesLL2TryEditor() {
@@ -232,6 +269,23 @@ public class LinkedList_TestCase extends BaseTest {
 		linkedlist_page.BrowserBack();
 		
 		}	
+	   
+	   @Test
+	    public void TypesLLEmptyTryHereFunc() {
+		    linkedlist_page.TypeOfLLlink();		
+			linkedlist_page.TryHereButton();
+			linkedlist_page.RunBtn();
+			try {
+			    Alert alert = 	linkedlist_page.AssertAlert();
+			    String actualAlert =alert.getText();
+			    Assert.assertNotNull(actualAlert);
+			    	}catch(NoAlertPresentException e){
+			    		
+			    		Assert.fail("Alert is not present");
+			    	}finally {
+			    		linkedlist_page.BrowserBack();
+					}
+		    }
 
 	@Test
 	public void ImpLL2TryEditor() {
@@ -277,6 +331,23 @@ public class LinkedList_TestCase extends BaseTest {
 		linkedlist_page.BrowserBack();
 		
 		}	
+	   
+	   @Test
+	    public void ImpLLEmptyTryHereFunc() {
+		    linkedlist_page.ImpLLlink();	
+			linkedlist_page.TryHereButton();
+			linkedlist_page.RunBtn();
+			try {
+			    Alert alert = 	linkedlist_page.AssertAlert();
+			    String actualAlert =alert.getText();
+			    Assert.assertNotNull(actualAlert);
+			    	}catch(NoAlertPresentException e){
+			    		
+			    		Assert.fail("Alert is not present");
+			    	}finally {
+			    		linkedlist_page.BrowserBack();
+					}
+		    }
 
 
 	@Test
@@ -323,6 +394,23 @@ public class LinkedList_TestCase extends BaseTest {
 		linkedlist_page.BrowserBack();
 		
 		}	
+	   
+	   @Test
+	    public void TraversalEmptyTryHereFunc() {
+		    linkedlist_page.LLTraversallink();	
+			linkedlist_page.TryHereButton();
+			linkedlist_page.RunBtn();
+			try {
+			    Alert alert = 	linkedlist_page.AssertAlert();
+			    String actualAlert =alert.getText();
+			    Assert.assertNotNull(actualAlert);
+			    	}catch(NoAlertPresentException e){
+			    		
+			    		Assert.fail("Alert is not present");
+			    	}finally {
+			    		linkedlist_page.BrowserBack();
+					}
+		    }
 
 	@Test
 	public void Insertion2TryEditor() {
@@ -368,6 +456,23 @@ public class LinkedList_TestCase extends BaseTest {
 		linkedlist_page.BrowserBack();
 		
 		}	
+	   
+	   @Test
+	    public void InsertionEmptyTryHereFunc() {
+		    linkedlist_page.LLInsertionlink();	
+			linkedlist_page.TryHereButton();
+			linkedlist_page.RunBtn();
+			try {
+			    Alert alert = 	linkedlist_page.AssertAlert();
+			    String actualAlert =alert.getText();
+			    Assert.assertNotNull(actualAlert);
+			    	}catch(NoAlertPresentException e){
+			    		
+			    		Assert.fail("Alert is not present");
+			    	}finally {
+			    		linkedlist_page.BrowserBack();
+					}
+		    }
 
 	@Test
 	public void Deletion2TryEditor() {
@@ -413,6 +518,23 @@ public class LinkedList_TestCase extends BaseTest {
 		linkedlist_page.BrowserBack();
 		
 		}	
+	   
+	   @Test
+	    public void DeletionEmptyTryHereFunc() {
+		   linkedlist_page.LLDeletionlink();	
+			linkedlist_page.TryHereButton();
+			linkedlist_page.RunBtn();
+			try {
+			    Alert alert = 	linkedlist_page.AssertAlert();
+			    String actualAlert =alert.getText();
+			    Assert.assertNotNull(actualAlert);
+			    	}catch(NoAlertPresentException e){
+			    		
+			    		Assert.fail("Alert is not present");
+			    	}finally {
+			    		linkedlist_page.BrowserBack();
+					}
+		    }
 
 	@Test
 	public void LLIntro2PracticeQues() {

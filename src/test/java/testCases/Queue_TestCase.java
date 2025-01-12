@@ -2,6 +2,8 @@ package testCases;
 
 import java.io.IOException;
 
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.NoAlertPresentException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -112,7 +114,24 @@ public class Queue_TestCase extends BaseTest {
 			queue_page.BrowserBack();
 			
 			}
-	 
+	 @Test
+	    public void ImpqueueEmptyTryHereFunc() {
+		queue_page.ImpQueueLink();
+		queue_page.Tryhere();
+		queue_page.RunBtn();
+		
+		try {
+		    Alert alert = 	queue_page.AssertAlert();
+		    String actualAlert =alert.getText();
+		    Assert.assertNotNull(actualAlert);
+		    	}catch(NoAlertPresentException e){
+		    		
+		    		Assert.fail("Alert is not present");
+		    	}finally {
+		    		queue_page.BrowserBack();
+				}
+	    }
+
 	@Test
 	public void ImpCollection2tryeditor() {
 		queue_page.ImpCollLink();
@@ -157,7 +176,26 @@ public class Queue_TestCase extends BaseTest {
 		queue_page.BrowserBack();
 		
 		}
- 	
+	
+	 @Test
+	    public void ImpCollEmptyTryHereFunc() {
+		queue_page.ImpCollLink();
+		queue_page.Tryhere();
+		queue_page.RunBtn();
+		
+		try {
+		    Alert alert = 	queue_page.AssertAlert();
+		    String actualAlert =alert.getText();
+		    Assert.assertNotNull(actualAlert);
+		    	}catch(NoAlertPresentException e){
+		    		
+		    		Assert.fail("Alert is not present");
+		    	}finally {
+		    		queue_page.BrowserBack();
+				}
+	    }
+	
+	 	
 	@Test
 	public void Imparray2tryeditor() {
 		queue_page.ImpArryLink();
@@ -203,6 +241,24 @@ public class Queue_TestCase extends BaseTest {
 		
 		}
 	
+	 @Test
+	    public void ImpArrayEmptyTryHereFunc() {
+		 queue_page.ImpArryLink();
+		queue_page.Tryhere();
+		queue_page.RunBtn();
+		
+		try {
+		    Alert alert = 	queue_page.AssertAlert();
+		    String actualAlert =alert.getText();
+		    Assert.assertNotNull(actualAlert);
+		    	}catch(NoAlertPresentException e){
+		    		
+		    		Assert.fail("Alert is not present");
+		    	}finally {
+		    		queue_page.BrowserBack();
+				}
+	    }
+		
 	@Test
 	public void queueOpr2tryeditor() {
 		queue_page.QueueOprLink();
@@ -247,6 +303,24 @@ public class Queue_TestCase extends BaseTest {
 		queue_page.BrowserBack();
 		
 		}	
+	@Test
+    public void QueueOprEmptyTryHereFunc() {
+	queue_page.QueueOprLink();
+	queue_page.Tryhere();
+	queue_page.RunBtn();
+	
+	try {
+	    Alert alert = 	queue_page.AssertAlert();
+	    String actualAlert =alert.getText();
+	    Assert.assertNotNull(actualAlert);
+	    	}catch(NoAlertPresentException e){
+	    		
+	    		Assert.fail("Alert is not present");
+	    	}finally {
+	    		queue_page.BrowserBack();
+			}
+    }
+	
 	@Test
 	public void Impqueue2PrctQues() {
 		queue_page.ImpQueueLink();

@@ -37,7 +37,7 @@ List<Map<String, String>> Login = BaseTest.Login;
 	
 	public Queue_Page(WebDriver driver) {	 
 		this.driver = driver;
-	    this.wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+	    this.wait=new WebDriverWait(driver,Duration.ofSeconds(5));
 	    PageFactory.initElements(driver, this);
     }
 	
@@ -97,24 +97,16 @@ List<Map<String, String>> Login = BaseTest.Login;
 	      wait.until(ExpectedConditions.textToBePresentInElement(outputField,output));
 	      return outputField.getText();
 	    }
-     public void TextEditor(String code)
-     {
-     int retry =3;
-     while(retry>0) {
-     	try {
-     String text=code;
+     
+     public void TextEditor(String code) {
+     	
+     	{	String text=code;
+     	
      ((JavascriptExecutor) driver).executeScript("arguments[0].setAttribute('value','"+text+"')", txteditorField);
      txteditorField.sendKeys(code);
-     break;
-     	}catch(Exception e) {
-     		wait.until(ExpectedConditions.elementToBeClickable(txteditorField));
-     		retry--;
-     	}	
      	}
-     		if(retry ==0) {
-     			throw new RuntimeException("Element not interactable after retries:"+ txteditorField);
-     		}
      	}
+     
      public void AcceptAlert() {
          try {
              wait.until(ExpectedConditions.alertIsPresent());
@@ -145,4 +137,9 @@ List<Map<String, String>> Login = BaseTest.Login;
      	}
  		return null;
      }
+     public Alert AssertAlert() {
+         Alert alert = driver.switchTo().alert();
+ 		return alert;
+     }
+
 }

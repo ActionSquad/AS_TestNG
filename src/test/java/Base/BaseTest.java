@@ -22,13 +22,13 @@ public class BaseTest {
     public static List<Map<String, String>> Python;
 
     private ExcelReader excelReader;
-
-  /*   @BeforeClass
+    /*
+     @BeforeClass
 		public void driverSetup(){
 		DriverConfig.getdriver(ConfigReader.getProperty("Browser"));
-    } */
-    
- //****************************************************************************************************************************   
+    } 
+    */
+//****************************************************************************************************************************   
   //To Run the Test cases in TestNg xml  
     @BeforeClass
      @Parameters({"browser"})
@@ -37,9 +37,8 @@ public class BaseTest {
         LoggerLoad.info(browser + " is opened");
            
        }   
-
 //******************************************************************************************************************************    
- 
+
     
     @BeforeClass
     public void setupExcel() throws IOException {
@@ -55,10 +54,8 @@ public class BaseTest {
             throw new RuntimeException("Excel initialization failed", e);
         }
         DataProviderClass.initializeData();
-        
          }
-   
-   
+      
 
     @AfterClass
     public void tearDown() {
